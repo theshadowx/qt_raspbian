@@ -1,7 +1,5 @@
 FROM  philipz/rpi-raspbian:latest
-
 MAINTAINER Ali Diouri <alidiouri@gmail.com>
-
 
 RUN apt-get update          
 RUN apt-get -y upgrade   
