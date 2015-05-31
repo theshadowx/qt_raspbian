@@ -1,4 +1,4 @@
-FROM  rpi-raspbian:latest
+FROM  philipz/rpi-raspbian:latest
 
 MAINTAINER Ali Diouri <alidiouri@gmail.com>
 
