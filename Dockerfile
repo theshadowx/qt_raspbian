@@ -1,7 +1,7 @@
 FROM  philipz/rpi-raspbian:latest
 MAINTAINER Ali Diouri <alidiouri@gmail.com>
 
-RUN sudo apt-get update
+RUN apt-get update
 RUN apt-get -y upgrade   
 RUN apt-get install -y       \
     git                     \
