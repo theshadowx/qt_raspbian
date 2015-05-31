@@ -2,8 +2,21 @@ FROM  philipz/rpi-raspbian:latest
 
 MAINTAINER Ali Diouri <alidiouri@gmail.com>
 
-RUN sudo apt-get update && \
-    sudo apt-get install -y build-essential git libssl-dev python wget libpng12-dev libglib2.0-dev libicu48 net-tools
+
+RUN apt-get update          &&  \
+    apt-get -y upgrade      &&  \
+    apt-get install -y          \
+        git                     \
+        make                    \
+        build-essential         \
+        g++                     \
+        lib32gcc1               \
+        nano                    \
+        libc6-i386              \
+        python                  \
+        python2.7               \
+        unzip                   \
+        wget libicu48 net-tools
 
 WORKDIR /home
 RUN wget https://s3-ap-southeast-2.amazonaws.com/purinda.com/raspberrypi/qt-everywhere-opensource-src-5.3.2_compiled_armv7l.tar.gz
