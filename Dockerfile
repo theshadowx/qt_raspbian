@@ -1,8 +1,8 @@
 FROM  philipz/rpi-raspbian:latest
 MAINTAINER Ali Diouri <alidiouri@gmail.com>
 # install depdencies
-RUN sudo apt-get update && \
-    apt-get -y upgrade && \
+RUN sudo apt-get update
+RUN apt-get -y upgrade && \
     apt-get install -y       \
     git                     \
     make                    \
