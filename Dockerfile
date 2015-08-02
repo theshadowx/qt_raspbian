@@ -1,9 +1,9 @@
 FROM  philipz/rpi-raspbian:latest
 MAINTAINER Ali Diouri <alidiouri@gmail.com>
 
-RUN apt-get update
-RUN apt-get -y upgrade   
-RUN apt-get install -y       \
+RUN apt-get update && \
+    apt-get -y upgrade && \
+    apt-get install -y       \
     git                     \
     make                    \
     build-essential         \
