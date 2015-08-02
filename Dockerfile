@@ -1,4 +1,4 @@
-FROM  philipz/rpi-raspbian:latest
+FROM  monsendag/rpi-raspbian-qemu:latest
 MAINTAINER Ali Diouri <alidiouri@gmail.com>
 # install depdencies
 RUN sudo apt-get update
