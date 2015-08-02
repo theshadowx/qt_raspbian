@@ -1,7 +1,7 @@
 FROM  monsendag/rpi-raspbian-qemu:latest
 MAINTAINER Ali Diouri <alidiouri@gmail.com>
 # install depdencies
-RUN sudo apt-get update
+RUN apt-get update
 RUN apt-get -y upgrade && \
     apt-get install -y       \
     git                     \
