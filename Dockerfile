@@ -2,7 +2,7 @@ FROM  monsendag/rpi-raspbian-qemu:latest
 MAINTAINER Ali Diouri <alidiouri@gmail.com>
 
 # PREPARE IMAGE
-ADD qemu-arm-static/qemu-arm-static /usr/bin/qemu-arm-static
+ADD /usr/bin/qemu-arm-static /usr/bin/qemu-arm-static
 ADD wrapper/wrapper-i386 /bin/sh
 ADD ld_wrapper/ld_wrapper.so /bin/ld_wrapper.so
 ADD binproxy /binproxy
