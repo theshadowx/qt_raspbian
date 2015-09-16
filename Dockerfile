@@ -2,8 +2,8 @@ FROM nghiant2710/sdhibit-rpi-raspbian-qemu
 MAINTAINER Ali Diouri <alidiouri@gmail.com>
 
 # install depdencies
-RUN apt-get update
-RUN apt-get -y upgrade && \
+RUN apt-get update && \
+    apt-get upgrade -y && \
     apt-get install -y       \
     git                     \
     make                    \
