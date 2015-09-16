@@ -1,7 +1,7 @@
 FROM  resin/rpi-raspbian:wheezy-2015-09-09
 MAINTAINER Ali Diouri <alidiouri@gmail.com>
 
-COPY qemu-arm-static /usr/bin/ 
+COPY /usr/bin/qemu-arm-static /usr/bin/ 
 
 # install depdencies
 RUN apt-get update
