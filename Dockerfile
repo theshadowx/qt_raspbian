@@ -1,4 +1,4 @@
-FROM  monsendag/rpi-raspbian-qemu:latest
+FROM  resin/rpi-raspbian:wheezy-2015-09-09
 MAINTAINER Ali Diouri <alidiouri@gmail.com>
 
 ENV INITSYSTEM on
