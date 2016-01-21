@@ -33,6 +33,7 @@ RUN make -j4
 RUN make install
 RUN rm -r /opt/qt5
 
+
 RUN export uid=1000 gid=1000 && \
     mkdir -p /home/developer && \
     echo "developer:x:${uid}:${gid}:Developer,,,:/home/developer:/bin/bash" >> /etc/passwd && \
