@@ -1,5 +1,11 @@
-FROM resin/rpi-raspbian:wheezy-2015-09-09
+#FROM resin/rpi-raspbian:wheezy-2015-09-09
+#MAINTAINER Ali Diouri <alidiouri@gmail.com>
+
+FROM resin/armv7hf-debian-qemu
 MAINTAINER Ali Diouri <alidiouri@gmail.com>
+
+
+RUN [ "cross-build-start" ]
 
 #RUN rm /etc/apt/sources.list
 #RUN touch /etc/apt/sources.list
@@ -45,3 +51,4 @@ RUN export uid=1000 gid=1000 && \
 USER developer
 ENV HOME /home/developer
 WORKDIR /home/developer
+RUN [ "cross-build-end" ]
